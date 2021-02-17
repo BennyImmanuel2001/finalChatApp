@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <script src="https://cdn.socket.io/socket.io-3.0.0.js"></script>
+
+  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src='/client/script/sign_in _script.js'></script>
+  <link href="/client/css/SignIn.css" rel="stylesheet">
+
+</head>
+
+<body class="center_page">
+
+  <h2>Signin Form</h2>
+
+  <form>
+
+
+    <div class="container">
+      <div class="label_container">
+        <label for="uname"><b>Username</b></label>
+        <input type="text" tabindex="1" id="Username" placeholder="Enter Username" name="uname" required>
+      </div>
+      <div class="label_container">
+        <label for="psw"><b>Password</b></label>
+        <input type="password" tabindex="2" id="password" placeholder="Enter Password" name="psw" required>
+      </div>
+
+    <div class="UserType">
+      <div id="doctor"  >
+        <img id="doctorImg" data-role="Doctor"  class="other" src="/img/doctor.png"   style="float: right; height: 50%;width: 50%;"/>
+      </div>
+      <div id="patient" >
+        <img id="patientImg" data-role="Patient" class="other" src="/img/patient.png" style="float: left;"  />
+      </div>
+    </div>
+
+
+      <div class="button_container">
+
+        <a href="/login">Already a User Login</a>
+        <!-- <a href="http://127.0.0.1:8000/login">Already a User Login</a> -->
+
+        <button id="signin_btn" tabindex="3" type="button">Sign in</button>
+      </div>
+    </div>
+
+
+  </form>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+<!-- <div class="password_" style="
+    display: flex;
+">
+
+    <div class="label_container">
+            <label for="psw"><b>Password</b></label>
+            <input type="password" tabindex="2" id="password" placeholder="Enter Password" name="psw" required="">
+    </div>
+    <div class="label_container" style="margin-left: 14%;">
+            <label for="psw"><b>Confirm Password</b></label>
+            <input type="password" tabindex="2" id="password" placeholder="Enter Password" name="psw" required="">
+    </div>
+</div> -->
+
+<!-- 
+<div class="container">
+  <div class="label_container">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" tabindex="1" id="Username" placeholder="Enter Username" name="uname" required="">
+  </div>
+  <div class="password_" style="
+display: flex;
+">
+
+<div class="label_container">
+        <label for="psw"><b>Password</b></label>
+        <input type="password" tabindex="2" id="password" placeholder="Enter Password" name="psw" required="" style="
+margin-left: 0%;
+width: 110%;
+">
+</div>
+<div class="label_container" style="margin-left: 14%;/* float: right; */">
+        <label for="psw"><b>Confirm Password</b></label>
+        <input type="password" tabindex="2" id="password" placeholder="Enter Password" name="psw" required="">
+</div>
+</div>
+  
+  <div class="button_container">
+
+    <a href="/login">Already a User Login</a>
+   
+
+    <button id="signin_btn" tabindex="3" type="button">Sign in</button>
+  </div>
+</div> -->
+
+
+<!-- 
+
+sessionStorage.setItem("lastname", "Smith");
+// Retrieve
+document.getElementById("result").innerHTML = sessionStorage.getItem("lastname"); -->

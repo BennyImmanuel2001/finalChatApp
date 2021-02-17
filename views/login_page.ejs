@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <script src="https://cdn.socket.io/socket.io-3.0.0.js"></script>
+
+  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src='/client/script/login_script.js'></script>
+  <link href="/client/css/Login_sigin.css" rel="stylesheet">
+
+</head>
+
+<body class="center_page">
+
+  <h2>Login Form</h2>
+
+  <form>
+
+
+    <div class="container">
+      <div class="label_container">
+        <label for="uname"><b>Username</b></label>
+        <input type="text" tabindex="1" id="Username" placeholder="Enter Username"  required>
+      </div>
+
+      <div class="label_container">
+        <label for="psw"><b>Password</b></label>
+        <input type="password" tabindex="2" id="password" placeholder="Enter Password"  required>
+      </div>
+
+
+      <div class="button_container">
+
+
+        <a href="/sigin">New user? Sign-In</a>
+        <!-- <a href="http://127.0.0.1:8000/sigin">New user? Sign-In</a> -->
+
+        <button id="login_btn" tabindex="3" type="button">Login in</button>
+
+      </div>
+    </div>
+
+  </form>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+sessionStorage.setItem("lastname", "Smith");
+// Retrieve
+document.getElementById("result").innerHTML = sessionStorage.getItem("lastname"); -->

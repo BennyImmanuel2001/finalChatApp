@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="/client/css/main.css" rel="stylesheet">
+
+  <script src="https://cdn.socket.io/socket.io-3.0.0.js"></script>
+
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- <script src="http://code.jquery.com/jquery-1.10.2.js"></script>  
+    <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>   -->
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <link rel="stylesheet" href="/resources/demos/style.css" />
+
+    <script defer src='/client/script/main.js'></script>
+  
+</head>
+
+<body style="display: flex;flex-direction: row;">
+<h1 id="YOU"></h1>
+
+<div id="context" style="display: none;">
+    <div id="contextItemCancel">Close</div>
+    <div id="contextItem1">Delete</div>
+    <!-- <div id="contextItemsfas1">df</div>
+    <div id="contextItedsfgm1">df</div>
+    <div id="contexem1">df</div>
+    <div id="contexfgdfgdfg">df</div> -->
+</div>
+<div id="dialog" style="display: none;">
+    <div id="dialogHeader">
+        <img id="dialogCloseBtn" src="/img/X.png" style="height: 20px;float: right;padding: 6px;padding-right: 7px;">
+    </div>
+        <div id="dialogContent">
+        <img id="dialogContentImg"src="/img/attach.png">
+    </div>
+</div>
+
+<!-- // $('.img1 img').attr(src); -->
+<div class="contacts_container app_page_contact">
+    <!-- <div class="contact">xghnjdstghjfgjfghj</div>
+        <div class="contact">dghjdfhj</div>
+        <div class="contact">dhjgdjhgjfhjghjfghjhgjhhjhjhjhjhjj</div>
+        <div class="contact">dhjdghjfghjk</div> -->
+
+    </div>
+    <!-- <img src="/img/bg-chat.png" style="/* height: 5%; */width: 7%;">
+
+    <div class="contact 6023993612048134c096c11f" data-user_id="ren" style="/* opacity: 1; *//* background-color: rgb(105, 255, 205); */"> 
+             
+        <img src="/img/bg-chat.png" style="height: 5%;width: 7%;border-radius: 222222px;"><label style="
+            padding-top: 14px;
+            padding-left: 10px;
+        ">
+            
+            
+            
+            ren</label></div> -->
+
+
+
+
+<div style="height: 100%;width: 100%;" class='chat_div app_page_msg'>
+    <div class=' flex_column'>
+
+        <div data-lastseen="Last seen on : " id="userInfo" style="height: 50px;background-color: rgb(141, 142, 148);">
+<div class="userInfoName"></div>
+<div class="userInfoTime" ></div>
+        </div>
+
+
+
+
+        <div id="msg_div" style="min-height: 80vh ; max-height: 80vh;"
+            class=" width_200 height_80 center table_container greycolor">
+            <!-- <div class="otheruser">${res[i].msg}<br><span> ${time} </span></div> 
+            <div class="user">${res[i].msg}<br><span> ${time} </span></div>  -->
+            </div>
+
+            <div class="app_console flex">
+
+                <input type="text" style="border-radius: 10px;" id="msgContainer" />
+                <!-- <button id="mic" class="not_recording"><img class="recording"  src="./mic.png"/></button> -->
+                <!-- <button id="mic" class="not_recording"><img src="./images/mic.png" /></button>
+                <label class="file_input">
+                    <img src="./images/attach.png" />
+                    <input type="file" id="image_sender" accept="image/x-png,image/gif,image/jpeg" />
+                </label> -->
+                <label class="file_input">
+                    <img src="./img/attach.png"/>
+                    <input type="file" id="image_sender"   accept="image/x-png,image/gif,image/jpeg" />
+                </label>
+                <button id="enter">Send</button>
+                <!-- <button id="image_sender">img</button> -->
+            </div>
+        </div>
+    </div>
+
+</body>
+
+
+</html>
